@@ -1,9 +1,9 @@
 //create map from leaflet.js
-const mymap = L.map('mapid').setView([39.5, -98.5], 4);
+const mymap = L.map('mapid').setView([39.5, -98.5], 6);
 //add a tile layer from OpenStreetMaps
 const tiles = L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png', {
 	maxZoom: 20,
-	attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
+	attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors',
 });
 tiles.addTo(mymap);
 //play and universal volume
