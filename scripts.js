@@ -1,9 +1,9 @@
 //create map from leaflet.js
 const mymap = L.map('mapid').setView([39.5, -98.5], 4);
 //add a tile layer from OpenStreetMaps
-const tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-	maxZoom: 19,
-	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+const tiles = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Terrain_Base/MapServer/tile/{z}/{y}/{x}', {
+	attribution: 'Tiles &copy; Esri &mdash; Source: USGS, Esri, TANA, DeLorme, and NPS',
+	maxZoom: 13
 });
 tiles.addTo(mymap);
 //play and universal volume
